@@ -4,8 +4,13 @@ export default createGlobalStyle`
 
   html, body, #root {
     margin: 0;
-    padding: 0;
     height: 100%;
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
   }
 
   *:focus {
@@ -14,7 +19,6 @@ export default createGlobalStyle`
 
   body {
     background: #FFFFFF;
-    -webkit-font-smoothing: antialiased !important;
   }
 
   h1, p {

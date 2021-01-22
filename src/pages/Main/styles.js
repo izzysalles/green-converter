@@ -3,6 +3,8 @@ import styled from 'styled-components';
 export const Body = styled.div`
   min-height: 100%;
   min-width: 100%;
+  height: 100%;
+  width: 100%;
   display: flex;
 `;
 
@@ -30,7 +32,6 @@ export const Container = styled.div`
 
   width: 100%;
   background: #f9f9fc;
-  padding-left: 150px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -77,17 +78,38 @@ export const Container = styled.div`
   }
 `;
 
+export const Elements = styled.div`
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff;
+  border-radius: 30px;
+  box-shadow: 0 2px 10px 0 rgba(0, 0, 0, 0.2);
+  padding: 35px;
+  width: 100%;
+  max-width: 1200px;
+  max-height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px auto;
+  box-sizing: border-box;
+  display: flex; 
+  flex-direction: row;
+
+  @media only screen and (max-width: 600px) {
+    margin: 0px 10px;
+  }
+`;
+
 export const Illustration = styled.div`
-  flex: 2;
-  height: 100%;
-  background-color: #f9f9fc;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 35px;
 
   img {
     @media only screen and (min-width: 1200px) {
-      width: 700px;
+      width: 600px;
       height: auto;
     }
     width: 100%;
