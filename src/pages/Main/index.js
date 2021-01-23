@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Body, LeftBar, Container, Elements, Illustration } from './styles';
+import { Body, LeftBar, Container, Elements, Illustration, Title, Description } from './styles';
 import Button from '../../styles/Button';
 import analytics from '../../assets/images/analytics.png';
 import exchange from '../../assets/images/exchange.png';
@@ -14,12 +14,12 @@ function Main() {
       <Container>
         <Elements>
           <div className="content-div">
-            <h1>GREEN CONVERTER</h1>
-            <p>
+            <Title>GREEN CONVERTER</Title>
+            <Description>
               Seja bem-vindo ao Green Converter, uma aplicação desenvolvida para
               realizar conversões de dólar para real, mostrando sempre
               informações de cotação do dólar, IOF e impostos.
-            </p>
+            </Description>
             <div className="button-div">
               <Link to="/purchase">
                 <Button>Comprar</Button>

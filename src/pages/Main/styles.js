@@ -38,25 +38,6 @@ export const Container = styled.div`
   font-family: 'Roboto', sans-serif;
   box-sizing: border-box;
 
-  h1 {
-    font-size: 60px;
-    font-weight: 700;
-    color: #2d2f3b;
-    margin-bottom: 20px;
-    @media only screen and (max-width: 1200px) {
-      font-size: 40px;
-    }
-  }
-
-  p {
-    font-size: 20px;
-    color: #707070;
-    margin-bottom: 20px;
-    @media only screen and (max-width: 1200px) {
-      font-size: 15px;
-    }
-  }
-
   .content-div {
     max-width: 400px;
     display: flex;
@@ -71,10 +52,6 @@ export const Container = styled.div`
 
   .button-div {
     width: 100%;
-  }
-
-  .signin {
-    margin-left: 20px;
   }
 `;
 
@@ -93,11 +70,30 @@ export const Elements = styled.div`
   align-items: center;
   margin: 0px auto;
   box-sizing: border-box;
-  display: flex; 
+  display: flex;
   flex-direction: row;
 
   @media only screen and (max-width: 600px) {
     margin: 0px 10px;
+  }
+`;
+
+export const Title = styled.h1`
+  font-size: 60px;
+  font-weight: 700;
+  color: #2d2f3b;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 1200px) {
+    font-size: 40px;
+  }
+`;
+
+export const Description = styled.p`
+  font-size: 20px;
+  color: #707070;
+  margin-bottom: 20px;
+  @media only screen and (max-width: 1200px) {
+    font-size: 15px;
   }
 `;
 
